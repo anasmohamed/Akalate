@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<RelativeLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:id="@+id/activity_detail"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--tools:context="com.example.android.akalate.DetailActivity">-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.akalate.DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/meal_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:contentDescription="@android:string/ok"
+            android:scaleType="fitXY" />
+
+
+        <TextView
+            android:id="@+id/prepare_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meal_photo"
+            android:background="@android:color/holo_blue_bright"
+            android:text="وقت الاعداد"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/prepare_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prepare_time_text"
+            android:background="@android:color/holo_blue_bright"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/prepare_time"
+            android:background="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/cooking_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:background="@android:color/holo_blue_bright"
+            android:text="وقت الطهى"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cooking_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cooking_time_text"
+            android:background="@android:color/holo_blue_bright"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/cooking_time"
+            android:background="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/total_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2"
+            android:background="@android:color/holo_blue_bright"
+            android:text="الوقت الكلى"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/total_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_time_text"
+            android:background="@android:color/holo_blue_bright"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/total_time"
+            android:background="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/persons_num_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line3"
+            android:background="@android:color/holo_blue_bright"
+            android:text="عدد الاشخاص"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/persons_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persons_num_text"
+            android:background="@android:color/holo_blue_bright"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/persons_num"
+            android:background="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/tools_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line4"
+            android:background="@android:color/holo_blue_bright"
+            android:text="الأدوات"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tools_text"
+            android:background="@android:color/holo_blue_bright"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/tools"
+            android:background="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/ingradinats_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line5"
+            android:background="@android:color/holo_blue_bright"
+            android:text="المكونات"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ingradinats_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ingradinats_text"
+            android:background="@android:color/holo_blue_bright"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/line6"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/ingradinats_content"
+            android:background="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/steps_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line6"
+            android:background="@android:color/holo_blue_bright"
+            android:text="الخطوات"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/steps_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/steps_text"
+            android:background="@android:color/holo_blue_bright"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/line7"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/steps_content"
+            android:background="@android:color/holo_red_dark" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+    <!--</RelativeLayout>-->
